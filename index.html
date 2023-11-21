@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+    <h1>Restaurant Registration Form </h1>
+    <div class="total">
+        <p class="main">LET US SERVE YOU <br> BETTER</p>
+        <div class="obj">
+            <h2>Let us serve you better</h2>
+            <p>Don’t wait in a line to enjoy your meal. <br> Reserve a table in advance with us.</p>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div class="whole">
+
+
+                    <label for="name"> Customer Name:</label>
+                    <div>
+                        <center><input style="background-color: beige;" type="text" name="myName" id="name"> </center>
+                    </div>
+                    <br>
+                    <label for="Date">Date Of Registration:</label>
+
+                    <div>
+                        <center><input type="date" name="myDate" id="Date"> </center>
+                    </div>
+                    <br>
+                    <label for="time">Time:</label>
+                    <div>
+                        <center> <input type="time" name="myTime" id="time"></center>
+                    </div>
+                    <br>
+                    <label for="guest">Number of Guests:</label>
+                    <div>
+                        <center><input  type="number" name="myGuest" id="guest" ></center>
+                    </div>
+                    <br>
+                    <label for="Phoneno">Phone Number:</label>
+                    <div>
+                        <center><input type="number" id="Phoneno"></center>
+                    </div>
+                    <br>
+                    <label for="email">Email</label>
+                    <div>
+                        <center> <input type="email" name="myEmail" id="email"></center>
+                    </div>
+                    <br>
+                    <label for="Location">Location</label>
+                    <div class="select">
+                        <center>
+                            <select name="myLocation" id="Location">
+                                <option value="Hyd">Hyderabad</option>
+                                <option value="Bang">Banglore</option>
+                                <option value="Mum">Mumbai</option>
+                                <option value="Del">Delhi</option>
+                                <option value="Che">Chennai</option>
+                            </select>
+                        </center>
+
+
+                    </div>
+
+
+                   
+                    <label for="submit"></label>
+                    <pre><input type="submit" id="submit" value="Submit">   <input type="reset"></pre> 
+                </div>
+        </div>
+    </div>
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
